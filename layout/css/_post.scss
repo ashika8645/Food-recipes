@@ -1,0 +1,115 @@
+.post {
+    &-title {
+        font-size: 6.4rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &-text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: gray;
+        width: 100%;
+        height: 5.8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &-image_user {
+        width: 4rem;
+        height: 4rem;
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-time {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &-name {
+        font-weight: 600;
+    }
+
+    &-user_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &-line {
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &-user {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.4rem;
+        margin-bottom: 4.8rem;
+    }
+
+
+
+    &-img {
+        height: 60rem;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            /* Adjust this based on your preference */
+            border-radius: 3rem;
+            display: block;
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        margin-top: 5rem;
+        padding-left: 2rem;
+    }
+
+    &-content_title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    &-content_text {
+        color: gray;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
+    &-share {
+        width: 20%;
+        font-size: 1.6rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        ion-icon {
+            font-size: 3rem;
+        }
+    }
+
+}

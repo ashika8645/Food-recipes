@@ -1,0 +1,250 @@
+.product {
+    &-title {
+        font-size: 6.4rem;
+        font-weight: 700;
+        margin-bottom: 3.8rem;
+    }
+
+    &-exit {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 1px solid gray;
+    }
+
+    &-image {
+        width: 5rem;
+        height: 5rem;
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-user,
+    &-icon {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &-titlename {
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 1rem;
+        border-right: 1px solid black;
+    }
+
+    &-text {
+        font-weight: 600;
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &-time {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-right {
+        display: flex;
+        gap: 2.2rem;
+    }
+
+    &-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        flex-direction: column;
+    }
+
+    &-print,
+    &-share {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        span {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+    }
+
+    &-media {
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+        width: 100%;
+        max-width: 115rem;
+        height: 55rem;
+        transform: translatey(13%);
+        margin-bottom: 12.6rem;
+    }
+
+    &-play {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 3rem;
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &-recipes {
+        position: relative;
+        overflow: hidden;
+        max-width: 40rem;
+        width: 100%;
+        height: 55rem;
+        background: $light-blue;
+        border-radius: 2rem;
+        transform: translatey(13%);
+    }
+
+    &-content {
+        height: 100%;
+        display: flex;
+        gap: 3rem;
+    }
+
+    &-recipes {
+        padding: 2rem;
+        text-align: left;
+    }
+
+    &-info_title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 2rem 0;
+
+    }
+
+    &-info {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+    }
+
+    &-info_right {
+        font-weight: 700;
+    }
+
+    &-cmt {
+        color: $light-gray;
+    }
+
+}
+
+.print,
+.share {
+    padding: 3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: $light-blue;
+}
+
+@media screen and (max-width: 1024px) {
+    .product-title {
+        font-size: 24px;
+    }
+
+    .product-text {
+        font-size: 14px;
+    }
+
+    .product-time {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .product-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .product-title {
+        font-size: 34px;
+    }
+
+    .product-text {
+        font-size: 14px;
+    }
+
+    .product-time {
+        font-size: 16px;
+    }
+
+    .product-list {
+        display: inline;
+    }
+
+    .product-right {
+        display: none;
+    }
+    .product-time {
+        gap: 5px;
+    }
+    .icon{
+        display: none;
+    }
+    .product-titlename {
+        border: none;
+    }
+    .product-media{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+    .blog-right{
+        display: none;
+    }
+}
+tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $light-gray;
+}
+
+.table {
+    width: 500px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 20px 0px;
+}

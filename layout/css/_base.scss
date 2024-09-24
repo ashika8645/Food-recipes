@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+a{
+    color: black;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 1;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    background-color: white;
+    font-family: $font-roboto;
+    padding: 0 2rem;
+    color: $text-color;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        padding: 2rem;
+    }
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 157.5rem;
+    margin:0 auto;
+    padding: 0 1.5rem  ;
+  }
+  @media screen and (max-width:1599px) {
+    html{
+        font-size: 50%;
+    }
+  }
+  

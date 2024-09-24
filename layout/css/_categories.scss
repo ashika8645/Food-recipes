@@ -1,0 +1,84 @@
+.categories {
+    margin: 20rem 0 15rem 0;
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-title {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    &-button {
+        font-weight: 700;
+        padding: 2rem;
+        border-radius: 10px;
+        border: none;
+        background-color: $light-blue;
+    }
+
+    &-card {
+        cursor: pointer;
+        padding: 2.5rem 1.5rem;
+        width: 100%;
+        max-width: 20rem;
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem 0;
+        border-radius: 20px;
+        opacity: 90%;
+        background-image: $blue;
+    }
+
+    &-img {
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    &-text {
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .categories-card {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .categories {
+            margin: 10rem 0 8rem 0;
+        }
+
+        .categories-list {
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .categories-card {
+        width: 100%;
+        }
+    }
+}
+
+// .slick-initialized .slick-slide,.slick-track{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }

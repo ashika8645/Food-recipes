@@ -1,0 +1,133 @@
+.contact {
+    &-heading {
+        font-size: 6.4rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8.4rem;
+    }
+
+    &-image {
+        width: 80rem;
+        height: 50.2rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-label {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $light-gray;
+    }
+
+    &-input {
+        width: 40rem;
+        height: 6rem;
+        border-radius: 1.6rem;
+        border: 1px solid $light-gray;
+        padding-left: 2rem;
+    }
+
+    &-texterea {
+        width: 100%;
+        height: 30rem;
+        border-radius: 1.6rem;
+        border: 1px solid $light-gray;
+        padding-left: 2rem;
+        font-size: 18px;
+        resize: none;
+    }
+
+    &-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    &-form {
+        max-width: 84rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* 2 columns */
+        grid-template-rows: repeat(4, auto);
+        /* 4 rows */
+        grid-gap: 2.4rem 4rem;
+    }
+
+    &-group:nth-child(5),
+    &-group:nth-child(6) {
+        grid-column: span 2;
+    }
+
+    /* Điều chỉnh cột thứ 5 và 6 để gộp lại thành một cột */
+    &-group:nth-child(5) .contact-input,
+    &-group:nth-child(6) .contact-input {
+        grid-column: span 2;
+        width: 100%;
+    }
+
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 6rem 0;
+        gap: 4.5rem;
+    }
+
+    &-button {
+        width: 18rem;
+        height: 6.4rem;
+        border-radius: 1.6rem;
+        background: #000;
+        color: white;
+        font-size: 1.6rem;
+        padding: 2rem 6.3rem;
+        border: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &-heading {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 7.2rem;
+        }
+
+        &-image {
+            display: none; /* Ẩn hình ảnh trên màn hình nhỏ hơn 1024px */
+        }
+
+        &-form {
+            padding: 0 24px;
+            max-width: 800px; /* Điều chỉnh giới hạn chiều rộng của form */
+            width: 100%; /* Chiếm toàn bộ chiều rộng của màn hình */
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &-image {
+            display: none; /* Ẩn hình ảnh trên màn hình nhỏ hơn 768px */
+        }
+        
+        &-form {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 400px;
+            width: 100%; 
+        }
+    }
+} 

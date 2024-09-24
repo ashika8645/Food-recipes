@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="icon" href="../layout/images/image-removebg-preview (1).png" type="image/gif" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+
+    <style></style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header-top">
+                    <img src="../images/image-removebg-preview (1).png" alt="" class="header-logo" />
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="../index.php" class="menu-link">home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="../index.php?pg=recipes" class="menu-link">recipes</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="../index.php?pg=blog" class="menu-link">blog</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="../index.php?pg=contact" class="menu-link">contact</a>
+                        </li>
+                    </ul>
+                    <ul class="user">
+                        <li class="user-item">
+                            <a href="../index.php?pg=dangnhap" class="user-link">login</a>
+                        </li>
+                        <li class="user-item">
+                            <a href="../index.php?pg=dangky" class="user-link">sign up</a>
+                        </li>
+                    </ul>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="dropdown_menu">
+                    <li class="menu-item">
+                        <a href="../index.php" class="menu-link">home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../index.php?pg=recipes" class="menu-link">recipes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../index.php?pg=blog" class="menu-link">blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../index.php?pg=contact" class="menu-link">contact</a>
+                    </li>
+                    <li class="user-item">
+                        <a href="../index.php?pg=dangnhap" class="user-link">login</a>
+                    </li>
+                    <li class="user-item">
+                        <a href="../index.php?pg=dangky" class="user-link">sign up</a>
+                    </li>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            const $toggleBtn = $(".toggle_btn");
+            const $dropDownMenu = $(".dropdown_menu");
+
+            $toggleBtn.on("click", function () {
+                $dropDownMenu.toggleClass("open");
+            });
+        });
+    </script>
+</body>
+
+</html>
